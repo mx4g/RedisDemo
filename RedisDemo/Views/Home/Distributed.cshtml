@@ -1,0 +1,18 @@
+﻿@model Dictionary<string,string>
+@{
+    ViewData["Title"] = "Distributed";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>分布式缓存测试</p>
+
+ 
+
+<ul>
+    @{
+        foreach (var kv in Model)
+        {
+            <li>@kv.Key : @kv.Value</li>
+        }
+    }
+</ul>
